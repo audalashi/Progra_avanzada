@@ -158,6 +158,10 @@ pcb.tiempo_algoritmos(n_valores)
 plt.savefig('grafico_t1progra.svg', format='svg')
 
 
+#EL RISAS
+
+
+
 
 
 
