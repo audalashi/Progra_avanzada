@@ -129,6 +129,8 @@ class CaminosPCB:
         plt.title('Comparación de eficiencic entre soluciones (Notación O)')
         plt.legend()
         plt.tight_layout()
+        # Guardar en formato SVG
+        plt.savefig('CURVAS.svg', format='svg')
         plt.show()
 
     #creamos un metodo para imprimir resultados y tiempos (con decorador)
@@ -155,7 +157,7 @@ n_valores = [(5, 5), (8, 8), (10, 10), (12, 12), (15, 15)]
 pcb.tiempo_algoritmos(n_valores)
 
 # Guardar en formato SVG
-plt.savefig('CURVAS.svg', format='svg')
+#plt.savefig('CURVAS.svg', format='svg')
 
 
 #EL RISAS
