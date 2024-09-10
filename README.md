@@ -30,7 +30,9 @@ Un algoritmo con complejidad O(1) es independiente del tamaño de la entrada. Es
 Para calcular el orden de un programa que funciona por etapas, primero se descompone el programa en cada una de sus etapas o partes. Luego, se determina la complejidad de cada etapa por separado, ya sea O(1), O(n), O(log n), etc., dependiendo de las operaciones que realicen. Si las etapas se ejecutan secuencialmente, las complejidades se suman, y se considera únicamente el término de mayor crecimiento. Si las etapas están anidadas (como los for dentro de otros for), sus complejidades se multiplican. Finalmente, el orden global del programa será la complejidad de la etapa más costosa en términos de crecimiento conforme el tamaño de la entrada aumenta
 
 -Por ejemplo si un problema recorre una sola lista iterativamente: O(n)
+
 -Si se aplica un bucle for dentro de otro bucle for: O(n) * O(n) = O(n^2)
+
 -Si se se recorre una lista iterativamente pero en otra etapa se aplica un bucle for dentro de otro bucle for se considera complejidad O(n^2) por lo explicado antes.
 
 6) ¿Cómo se puede determinar la complejidad temporal de un algoritmo recursivo?
